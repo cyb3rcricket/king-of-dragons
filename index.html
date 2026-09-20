@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The King of Dragons - SNES Classic Beat 'Em Up</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Phaser 3 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="arcade-container">
+    <!-- Arcade Header Marquee -->
+    <header class="arcade-header">
+      <div class="arcade-title">
+        <span>THE KING OF DRAGONS</span>
+        <span class="arcade-badge">SNES 16-BIT</span>
+      </div>
+      <div class="arcade-quick-controls">
+        <button id="btn-crt" class="retro-btn" title="Toggle CRT Scanlines (Key: T)">CRT: OFF</button>
+        <button id="btn-audio" class="retro-btn active" title="Toggle Audio (Key: M)">AUDIO: ON</button>
+        <button id="btn-pad" class="retro-btn" title="Toggle Virtual Controls">PAD: AUTO</button>
+        <button id="btn-fullscreen" class="retro-btn" title="Toggle Fullscreen">FULLSCREEN</button>
+      </div>
+    </header>
+
+    <!-- Game Canvas Viewport -->
+    <div id="game-wrapper">
+      <div id="crt-overlay"></div>
+    </div>
+
+    <!-- Bottom Controls Reference -->
+    <footer class="arcade-footer">
+      <div class="control-item"><span class="key-badge">W A S D</span> / <span class="key-badge">Arrows</span> Move</div>
+      <div class="control-item"><span class="key-badge">J</span> / <span class="key-badge">Z</span> Attack Combo</div>
+      <div class="control-item"><span class="key-badge">K</span> / <span class="key-badge">X</span> Jump</div>
+      <div class="control-item"><span class="key-badge">Space</span> / <span class="key-badge">Shift</span> Shield Guard</div>
+      <div class="control-item"><span class="key-badge">L</span> / <span class="key-badge">C</span> Magic Storm</div>
+      <div class="control-item"><span class="key-badge">T</span> CRT Toggle</div>
+      <div class="control-item"><span class="key-badge">M</span> Mute</div>
+    </footer>
+  </div>
+
+  <!-- Game Engine & Script Architecture -->
+  <script src="js/audio.js"></script>
+  <script src="js/asset_generator.js"></script>
+  <script src="js/entities/Player.js"></script>
+  <script src="js/entities/Enemy.js"></script>
+  <script src="js/entities/Goblin.js"></script>
+  <script src="js/entities/Orc.js"></script>
+  <script src="js/entities/Boss.js"></script>
+  <script src="js/ui/HUD.js"></script>
+  <script src="js/ui/VirtualPad.js"></script>
+  <script src="js/scenes/BootScene.js"></script>
+  <script src="js/scenes/TitleScene.js"></script>
+  <script src="js/scenes/GameScene.js"></script>
+  <script src="js/scenes/GameOverScene.js"></script>
+  <script src="js/scenes/VictoryScene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

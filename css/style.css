@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   THE KING OF DRAGONS - 16-Bit SNES Arcade Beat 'Em Up Stylesheet
+   ========================================================================== */
+
+:root {
+  --bg-color: #0b0c10;
+  --arcade-border: #1f2833;
+  --arcade-gold: #f5b041;
+  --arcade-glow: rgba(245, 176, 65, 0.4);
+  --crt-scanline-color: rgba(0, 0, 0, 0.35);
+  --text-color: #c5c6c7;
+  --accent-cyan: #66fcf1;
+  --accent-ruby: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background ambient glow */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 50% 50%, #1a1e29 0%, #08090d 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Main Arcade Enclosure */
+#arcade-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: linear-gradient(145deg, #1c1f26, #0e1014);
+  border-radius: 12px;
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.8),
+    0 0 0 4px #2c3340,
+    0 0 25px var(--arcade-glow);
+  max-width: 98vw;
+  max-height: 96vh;
+}
+
+/* Top Arcade Header Marquee */
+.arcade-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px 8px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--arcade-gold);
+  text-shadow: 0 0 8px rgba(245, 176, 65, 0.7);
+  border-bottom: 2px solid #2c3340;
+  margin-bottom: 8px;
+}
+
+.arcade-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arcade-badge {
+  background: #c0392b;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 9px;
+  box-shadow: 0 0 6px #e74c3c;
+}
+
+.arcade-quick-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.retro-btn {
+  background: #232a35;
+  color: #c5c6c7;
+  border: 1px solid #455060;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.retro-btn:hover {
+  background: #364152;
+  color: #fff;
+  border-color: var(--arcade-gold);
+  box-shadow: 0 0 6px var(--arcade-glow);
+}
+
+.retro-btn.active {
+  background: #d35400;
+  color: #fff;
+  border-color: #f39c12;
+  box-shadow: 0 0 8px #e67e22;
+}
+
+/* Screen Bezel & Canvas Wrapper */
+#game-wrapper {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  max-width: 92vw;
+  max-height: calc(92vw * 9 / 16);
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9), 0 0 0 2px #0a0b0e;
+}
+
+/* Force canvas to scale sharply without anti-aliasing */
+#game-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* CRT Scanlines Overlay */
+#crt-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#crt-overlay.crt-on {
+  opacity: 1;
+}
+
+#crt-overlay.crt-on::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.4) 50%
+  ), 
+  linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.04),
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 0, 255, 0.04)
+  );
+  z-index: 1000;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Vignette shadow curvature */
+#crt-overlay.crt-on::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0,0,0,0) 65%,
+    rgba(0,0,0,0.6) 100%
+  );
+  z-index: 1001;
+  pointer-events: none;
+}
+
+/* Bottom Controls Legend */
+.arcade-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 8px 12px 2px 12px;
+  margin-top: 6px;
+  border-top: 1px solid #222933;
+  font-size: 11px;
+  color: #8b9bb4;
+}
+
+.key-badge {
+  display: inline-block;
+  background: #2c3442;
+  color: #fff;
+  border: 1px solid #4a576b;
+  border-bottom: 2px solid #1a2029;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #arcade-container {
+    padding: 6px;
+  }
+  .arcade-header {
+    font-size: 9px;
+  }
+  .arcade-footer {
+    display: none;
+  }
+}
