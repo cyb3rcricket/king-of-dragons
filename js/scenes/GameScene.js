@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Core Gameplay Scene (Stage 1)
+ * Untitled Dragon Brawler - Core Gameplay Scene (Stage 1)
  * "The Outskirts of Malmort: Ancient Forest & Ruined Fortress Gate"
  * Manages 2.5D belt-scroll progression, wave triggers, enemy spawners,
  * camera locking, barrel breakables, item drops, hitstop, and boss encounter.

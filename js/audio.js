@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Web Audio API 16-Bit Chiptune Sound Engine
+ * Untitled Dragon Brawler - Web Audio API 16-Bit Chiptune Sound Engine
  * Zero external audio dependencies. Completely procedural audio synthesis.
  */
 

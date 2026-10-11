@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Stage 1 Boss: Orc Warlord Gorgok
+ * Untitled Dragon Brawler - Stage 1 Boss: Orc Warlord Gorgok
  * Dual-morningstar champion with leaping ground pounds, shockwaves,
  * and a 50% HP berserk rage phase with minion summoning.
  */

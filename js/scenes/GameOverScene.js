@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Game Over / Continue Scene
+ * Untitled Dragon Brawler - Game Over / Continue Scene
  * Retro arcade game over screen with score tally and restart countdown.
  */
 
@@ -44,7 +44,7 @@ class GameOverScene extends Phaser.Scene {
       const shield = this.add.image(380, 65, 'icon_shield').setScale(0.032).setAngle(-25).setTint(0x757575);
     }
 
-    // Score Summary Plaque (Warcraft Kit)
+    // Score Summary Plaque (UI Kit)
     if (this.textures.exists('panel_dialog')) {
       const plaque = this.add.image(240, 142, 'panel_dialog').setScale(0.20, 0.115);
     } else {

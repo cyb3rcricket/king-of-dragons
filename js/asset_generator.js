@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Procedural 16-Bit Pixel Art Asset Generator
+ * Untitled Dragon Brawler - Procedural 16-Bit Pixel Art Asset Generator
  * Generates all spritesheets, tilesets, backgrounds, and VFX directly
  * onto HTML5 Canvases and registers them with Phaser 3 TextureManager.
  */

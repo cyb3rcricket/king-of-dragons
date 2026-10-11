@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Boot & Asset Preload Scene
+ * Untitled Dragon Brawler - Boot & Asset Preload Scene
  * Runs procedural 16-bit pixel art asset generation, sets up sprite animations,
  * displays a retro arcade self-test screen, and transitions to TitleScene.
  */
@@ -10,29 +10,29 @@ class BootScene extends Phaser.Scene {
   }
 
   preload() {
-    // Preload high-res Warcraft Kit graphical assets
+    // Preload high-res UI Kit graphical assets
     const kitAssets = [
-      { key: 'prop_barrel', path: 'warcraft_kit/prop_barrel.png' },
-      { key: 'prop_crate', path: 'warcraft_kit/prop_crate.png' },
-      { key: 'prop_chest', path: 'warcraft_kit/prop_chest.png' },
-      { key: 'prop_chair', path: 'warcraft_kit/prop_chair.png' },
-      { key: 'prop_table', path: 'warcraft_kit/prop_table.png' },
-      { key: 'prop_lantern', path: 'warcraft_kit/prop_lantern.png' },
-      { key: 'prop_plant', path: 'warcraft_kit/prop_plant.png' },
-      { key: 'icon_gold_coin', path: 'warcraft_kit/icon_gold_coin.png' },
-      { key: 'icon_health_potion', path: 'warcraft_kit/icon_health_potion.png' },
-      { key: 'icon_mana_potion', path: 'warcraft_kit/icon_mana_potion.png' },
-      { key: 'icon_sword', path: 'warcraft_kit/icon_sword.png' },
-      { key: 'icon_shield', path: 'warcraft_kit/icon_shield.png' },
-      { key: 'icon_scroll', path: 'warcraft_kit/icon_scroll.png' },
-      { key: 'icon_wood_logs', path: 'warcraft_kit/icon_wood_logs.png' },
-      { key: 'icon_iron_ore', path: 'warcraft_kit/icon_iron_ore.png' },
-      { key: 'panel_dialog', path: 'warcraft_kit/panel_dialog.png' },
-      { key: 'bar_frame', path: 'warcraft_kit/bar_frame.png' },
-      { key: 'bar_fill', path: 'warcraft_kit/bar_fill.png' },
-      { key: 'button_normal', path: 'warcraft_kit/button_normal.png' },
-      { key: 'button_hover', path: 'warcraft_kit/button_hover.png' },
-      { key: 'button_pressed', path: 'warcraft_kit/button_pressed.png' }
+      { key: 'prop_barrel', path: 'ui_kit/prop_barrel.png' },
+      { key: 'prop_crate', path: 'ui_kit/prop_crate.png' },
+      { key: 'prop_chest', path: 'ui_kit/prop_chest.png' },
+      { key: 'prop_chair', path: 'ui_kit/prop_chair.png' },
+      { key: 'prop_table', path: 'ui_kit/prop_table.png' },
+      { key: 'prop_lantern', path: 'ui_kit/prop_lantern.png' },
+      { key: 'prop_plant', path: 'ui_kit/prop_plant.png' },
+      { key: 'icon_gold_coin', path: 'ui_kit/icon_gold_coin.png' },
+      { key: 'icon_health_potion', path: 'ui_kit/icon_health_potion.png' },
+      { key: 'icon_mana_potion', path: 'ui_kit/icon_mana_potion.png' },
+      { key: 'icon_sword', path: 'ui_kit/icon_sword.png' },
+      { key: 'icon_shield', path: 'ui_kit/icon_shield.png' },
+      { key: 'icon_scroll', path: 'ui_kit/icon_scroll.png' },
+      { key: 'icon_wood_logs', path: 'ui_kit/icon_wood_logs.png' },
+      { key: 'icon_iron_ore', path: 'ui_kit/icon_iron_ore.png' },
+      { key: 'panel_dialog', path: 'ui_kit/panel_dialog.png' },
+      { key: 'bar_frame', path: 'ui_kit/bar_frame.png' },
+      { key: 'bar_fill', path: 'ui_kit/bar_fill.png' },
+      { key: 'button_normal', path: 'ui_kit/button_normal.png' },
+      { key: 'button_hover', path: 'ui_kit/button_hover.png' },
+      { key: 'button_pressed', path: 'ui_kit/button_pressed.png' }
     ];
 
     kitAssets.forEach(asset => {
@@ -44,7 +44,7 @@ class BootScene extends Phaser.Scene {
     // 1. Arcade Boot Visuals
     this.cameras.main.setBackgroundColor('#050608');
 
-    const titleText = this.add.text(240, 80, 'THE KING OF DRAGONS', {
+    const titleText = this.add.text(240, 80, 'UNTITLED DRAGON BRAWLER', {
       fontFamily: 'monospace',
       fontSize: '18px',
       fontStyle: 'bold',
@@ -61,7 +61,7 @@ class BootScene extends Phaser.Scene {
       "VRAM 64KB OK",
       "SPC700 SOUND ENGINE OK",
       "PIXEL PROCEDURAL SPRITES LOADED",
-      "WARCRAFT HD TEXTURE PACK LOADED",
+      "HD UI TEXTURE PACK LOADED",
       "PARALLAX BELT-SCROLL ENGINE READY"
     ];
 

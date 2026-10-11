@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Base Enemy Entity
+ * Untitled Dragon Brawler - Base Enemy Entity
  * Handles 2.5D AI positioning, state transitions, hit reactions,
  * knockdowns, loot drops, and death animations.
  */

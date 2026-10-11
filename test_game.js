@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Verification & Smoke Test Script
+ * Untitled Dragon Brawler - Verification & Smoke Test Script
  * Runs in Node.js to validate file structure, JS syntax, script dependencies,
  * texture/animation asset integrity, and real runtime asset generation.
  */
@@ -9,7 +9,7 @@ const path = require('path');
 const vm = require('vm');
 
 console.log("\x1b[36m=====================================================");
-console.log(" THE KING OF DRAGONS - AUTOMATED VERIFICATION SUITE");
+console.log(" UNTITLED DRAGON BRAWLER - AUTOMATED VERIFICATION SUITE");
 console.log("=====================================================\x1b[0m\n");
 
 const baseDir = path.resolve(__dirname);
@@ -274,8 +274,8 @@ try {
   assert(false, `Runtime test suite failed: ${e.message}\n${e.stack}`);
 }
 
-// 6. Verify Warcraft Kit Asset Integration
-console.log("\n\x1b[33m--- [Test Suite 6: Warcraft Kit & Graphics Upgrade Verification] ---\x1b[0m");
+// 6. Verify UI Kit Asset Integration
+console.log("\n\x1b[33m--- [Test Suite 6: UI Kit & Graphics Upgrade Verification] ---\x1b[0m");
 
 const expectedKitAssets = [
   'prop_barrel.png', 'prop_crate.png', 'prop_chest.png',
@@ -288,12 +288,12 @@ const expectedKitAssets = [
 ];
 
 expectedKitAssets.forEach(fileName => {
-  const fullP = path.join(baseDir, 'warcraft_kit', fileName);
-  assert(fs.existsSync(fullP), `Kit Asset exists: warcraft_kit/${fileName}`);
+  const fullP = path.join(baseDir, 'ui_kit', fileName);
+  assert(fs.existsSync(fullP), `Kit Asset exists: ui_kit/${fileName}`);
 });
 
 const bootCode = fs.readFileSync(path.join(baseDir, 'js/scenes/BootScene.js'), 'utf8');
-assert(bootCode.includes('warcraft_kit/prop_barrel.png') && bootCode.includes('warcraft_kit/bar_frame.png'), 'BootScene.preload registers warcraft_kit assets');
+assert(bootCode.includes('ui_kit/prop_barrel.png') && bootCode.includes('ui_kit/bar_frame.png'), 'BootScene.preload registers ui_kit assets');
 
 const gameSceneCode = fs.readFileSync(path.join(baseDir, 'js/scenes/GameScene.js'), 'utf8');
 assert(gameSceneCode.includes('prop_chest') && gameSceneCode.includes('prop_crate') && gameSceneCode.includes('prop_barrel'), 'GameScene includes chest, crate, and barrel breakables');

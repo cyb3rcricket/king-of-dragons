@@ -1,7 +1,7 @@
 /**
- * The King of Dragons - Retro Arcade Title Scene
+ * Untitled Dragon Brawler - Retro Arcade Title Scene
  * Featuring parallax background demo, animated Elf Warrior preview,
- * authentic SNES Capcom styling, and controls tutorial.
+ * authentic 16-bit arcade styling, and controls tutorial.
  */
 
 class TitleScene extends Phaser.Scene {
@@ -23,7 +23,7 @@ class TitleScene extends Phaser.Scene {
     overlay.fillStyle(0x0a0c14, 0.45);
     overlay.fillRect(0, 0, 480, 270);
 
-    // Heraldry Icons flanking Title (Warcraft Kit)
+    // Heraldry Icons flanking Title (UI Kit)
     if (this.textures.exists('icon_sword')) {
       const swordHerald = this.add.image(55, 60, 'icon_sword').setScale(0.036).setAngle(-18);
       this.tweens.add({
@@ -51,14 +51,14 @@ class TitleScene extends Phaser.Scene {
     }
 
     // Title Logo & Marquee
-    const subCapcom = this.add.text(240, 28, '★ CAPCOM 16-BIT CLASSIC HOMAGE ★', {
+    const marqueeText = this.add.text(240, 28, '★ 16-BIT ARCADE HOMAGE ★', {
       fontFamily: 'monospace',
       fontSize: '9px',
       color: '#00e5ff',
       letterSpacing: 2
     }).setOrigin(0.5, 0.5);
 
-    const mainTitle = this.add.text(240, 58, 'THE KING OF DRAGONS', {
+    const mainTitle = this.add.text(240, 58, 'UNTITLED DRAGON BRAWLER', {
       fontFamily: 'monospace',
       fontSize: '24px',
       fontStyle: 'bold',

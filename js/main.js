@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Main Phaser 3 Initialization & Configuration
+ * Untitled Dragon Brawler - Main Phaser 3 Initialization & Configuration
  * 16-Bit SNES Arcade Beat 'Em Up Engine
  */
 

@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Goblin Minion Entity
+ * Untitled Dragon Brawler - Goblin Minion Entity
  * Fast, agile swarming enemy with spear thrusts and high gold drop rates.
  */
 

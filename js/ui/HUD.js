@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Authentic 16-Bit SNES HUD System
+ * Untitled Dragon Brawler - Authentic 16-Bit SNES HUD System
  * Displays player portrait, HP bar, Magic orbs, Level, EXP, Score, Gold,
  * Boss HP bar, flashing "GO -->" indicator, and floating combat text.
  */
