@@ -71,7 +71,7 @@ A complete, fully playable MVP recreation of Capcom's classic arcade/SNES fantas
 ### Quick Start (Python Server)
 Open terminal in the project directory:
 ```bash
-cd /Users/celtninja/Desktop/Gemini/king-of-dragons
+cd king-of-dragons
 python3 serve.py
 ```
 This will automatically launch `http://localhost:8000/` in your default browser!
