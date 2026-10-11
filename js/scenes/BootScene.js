@@ -59,7 +59,7 @@ class BootScene extends Phaser.Scene {
 
     const checkList = [
       "VRAM 64KB OK",
-      "SPC700 SOUND ENGINE OK",
+      "CHIPTUNE SOUND ENGINE OK",
       "PIXEL PROCEDURAL SPRITES LOADED",
       "HD UI TEXTURE PACK LOADED",
       "PARALLAX BELT-SCROLL ENGINE READY"
