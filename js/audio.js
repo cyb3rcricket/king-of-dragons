@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Web Audio API 16-Bit Chiptune Sound Engine
+ * Elfblade Road - Web Audio API 16-Bit Chiptune Sound Engine
  * Zero external audio dependencies. Completely procedural audio synthesis.
  */
 
@@ -658,7 +658,7 @@ class SoundEngine {
       osc.type = 'square';
       osc.frequency.setValueAtTime(freq, time);
 
-      // Add gentle vibrato for rich SNES lead
+      // Add gentle vibrato for rich 16-bit style lead
       const vib = this.ctx.createOscillator();
       vib.frequency.value = 6;
       const vibGain = this.ctx.createGain();

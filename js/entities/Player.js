@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Player Entity: Female Elf Warrior
+ * Elfblade Road - Player Entity: Female Elf Warrior
  * Handles 2.5D belt-scroll movement, 3-hit melee combo, jump attacks,
  * shield guarding, magic storm, RPG leveling, and sprite depth sorting.
  */
@@ -415,7 +415,7 @@ class Player {
           critSpark.setTint(0xff9800);
           this.scene.tweens.add({ targets: critSpark, alpha: 0, scale: 1.7, duration: 200, onComplete: () => critSpark.destroy() });
         }
-        // Hitstop sensation (Capcom arcade style freeze)
+        // Hitstop sensation (classic arcade-style freeze)
         this.scene.triggerHitstop(50);
         // Sound
         window.SoundEngine.playHit(isKnockdown);

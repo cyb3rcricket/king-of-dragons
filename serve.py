@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-The King of Dragons - Local HTTP Game Server
+Elfblade Road - Local HTTP Game Server
 Run this script to immediately launch the game locally in your web browser.
 Usage:
     python3 serve.py [port]
@@ -30,7 +30,7 @@ def main():
     with socketserver.TCPServer(("127.0.0.1", PORT), NoCacheHandler) as httpd:
         url = f"http://127.0.0.1:{PORT}/"
         print("=" * 60)
-        print("  THE KING OF DRAGONS (SNES 16-BIT CLASSIC ARCADE)")
+        print("  ELFBLADE ROAD (16-BIT ARCADE)")
         print(f"  Game Server active at: {url}")
         print("  Opening game in your browser...")
         print("  Press Ctrl+C to terminate.")

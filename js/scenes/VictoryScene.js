@@ -1,5 +1,5 @@
 /**
- * The King of Dragons - Stage 1 Victory Scene
+ * Elfblade Road - Stage 1 Victory Scene
  * Features Stage Clear fanfare, bonus tally calculations,
  * hero ranking grade (S / A / B / C), and replay option.
  */
@@ -68,7 +68,7 @@ class VictoryScene extends Phaser.Scene {
       });
     }
 
-    // Results Card Plaque (Warcraft Kit)
+    // Results Card Plaque (UI Kit)
     if (this.textures.exists('panel_dialog')) {
       const plaque = this.add.image(310, 140, 'panel_dialog').setScale(0.195, 0.170);
     } else {

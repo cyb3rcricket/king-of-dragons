@@ -1,4 +1,4 @@
-# The King of Dragons (16-Bit SNES Classic Beat 'Em Up)
+# Elfblade Road (16-Bit Beat 'Em Up)
 
 A little side-scrolling brawler in the browser. You're an elf warrior with a sword, a shield, and a lightning spell, punching your way through goblins and orcs to an orc warlord boss. I'm Cricket ([@Cyb3rCricket](https://x.com/Cyb3rCricket)), and I made this because 90s arcade brawlers are joy in game form.
 
@@ -26,7 +26,7 @@ This opens http://127.0.0.1:8000/ in your browser. Any static server works too, 
 - **Engine:** [Phaser 3](https://phaser.io), plain JavaScript, no build step. Each scene (title, game, game over, victory) and each enemy type has its own file in `js/`.
 - **Fake depth:** you walk up and down a street as well as left and right. Sprites are drawn in order of how far "down" they are, and a jump is a separate height value with a shadow under you.
 - **Characters are drawn by code:** `js/asset_generator.js` paints the elf, the goblins, the orcs, the boss, barrels, and pickups onto canvases at startup.
-- **Props and UI are PNGs:** `js/scenes/BootScene.js` loads 23 images from `warcraft_kit/`. That covers crates, barrels, a chest, a lantern, potion and coin icons, panels, buttons, and the health bar. The game checks whether each one loaded and falls back to simpler drawn shapes if it didn't.
+- **Props and UI are PNGs:** `js/scenes/BootScene.js` loads 21 images from `ui_kit/`. That covers crates, barrels, a chest, a lantern, potion and coin icons, panels, buttons, and the health bar. The game checks whether each one loaded and falls back to simpler drawn shapes if it didn't.
 - **Sound is synthesized:** `js/audio.js` makes every sound effect and the chiptune music with Web Audio. There are no audio files.
 - **Progress:** enemies drop gold and give EXP. You level up through level 4, and the boss gets angrier below half health.
 
@@ -40,6 +40,6 @@ These are static checks: the files exist, the JavaScript parses, the scripts loa
 
 ## The honest catch
 
-- This is a fan-made homage to Capcom's *The King of Dragons*. It isn't affiliated with Capcom, and it's one stage, not the full game.
-- The prop and UI art in `warcraft_kit/` and the raw images in `imagine_images/` are AI-generated, which makes the repo heavy (about 130 MB).
+- It's one stage, not a full game: a love letter to 90s arcade brawlers, not a remake of any of them.
+- The prop and UI art in `ui_kit/` is AI-generated, and so are the raw source images in `imagine_images/`. Those images make the repo heavy (about 130 MB).
 - Balance is "felt right to me," not tuned.
