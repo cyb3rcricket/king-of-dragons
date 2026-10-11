@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Base Enemy Entity
+ * Elfblade Road - Base Enemy Entity
  * Handles 2.5D AI positioning, state transitions, hit reactions,
  * knockdowns, loot drops, and death animations.
  */

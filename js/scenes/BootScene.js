@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Boot & Asset Preload Scene
+ * Elfblade Road - Boot & Asset Preload Scene
  * Runs procedural 16-bit pixel art asset generation, sets up sprite animations,
  * displays a retro arcade self-test screen, and transitions to TitleScene.
  */
@@ -44,7 +44,7 @@ class BootScene extends Phaser.Scene {
     // 1. Arcade Boot Visuals
     this.cameras.main.setBackgroundColor('#050608');
 
-    const titleText = this.add.text(240, 80, 'UNTITLED DRAGON BRAWLER', {
+    const titleText = this.add.text(240, 80, 'ELFBLADE ROAD', {
       fontFamily: 'monospace',
       fontSize: '18px',
       fontStyle: 'bold',

@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Player Entity: Female Elf Warrior
+ * Elfblade Road - Player Entity: Female Elf Warrior
  * Handles 2.5D belt-scroll movement, 3-hit melee combo, jump attacks,
  * shield guarding, magic storm, RPG leveling, and sprite depth sorting.
  */

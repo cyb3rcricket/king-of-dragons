@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Goblin Minion Entity
+ * Elfblade Road - Goblin Minion Entity
  * Fast, agile swarming enemy with spear thrusts and high gold drop rates.
  */
 

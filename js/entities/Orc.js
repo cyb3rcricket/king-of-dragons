@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Heavy Orc Entity
+ * Elfblade Road - Heavy Orc Entity
  * Tough enemy with high HP, overhead spiked mace smash, and shoulder rush charge.
  */
 

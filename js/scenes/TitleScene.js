@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Retro Arcade Title Scene
+ * Elfblade Road - Retro Arcade Title Scene
  * Featuring parallax background demo, animated Elf Warrior preview,
  * authentic 16-bit arcade styling, and controls tutorial.
  */
@@ -58,7 +58,7 @@ class TitleScene extends Phaser.Scene {
       letterSpacing: 2
     }).setOrigin(0.5, 0.5);
 
-    const mainTitle = this.add.text(240, 58, 'UNTITLED DRAGON BRAWLER', {
+    const mainTitle = this.add.text(240, 58, 'ELFBLADE ROAD', {
       fontFamily: 'monospace',
       fontSize: '24px',
       fontStyle: 'bold',

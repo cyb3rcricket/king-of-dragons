@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Verification & Smoke Test Script
+ * Elfblade Road - Verification & Smoke Test Script
  * Runs in Node.js to validate file structure, JS syntax, script dependencies,
  * texture/animation asset integrity, and real runtime asset generation.
  */
@@ -9,7 +9,7 @@ const path = require('path');
 const vm = require('vm');
 
 console.log("\x1b[36m=====================================================");
-console.log(" UNTITLED DRAGON BRAWLER - AUTOMATED VERIFICATION SUITE");
+console.log(" ELFBLADE ROAD - AUTOMATED VERIFICATION SUITE");
 console.log("=====================================================\x1b[0m\n");
 
 const baseDir = path.resolve(__dirname);

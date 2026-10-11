@@ -1,6 +1,6 @@
 /**
- * Untitled Dragon Brawler - Main Phaser 3 Initialization & Configuration
- * 16-Bit SNES Arcade Beat 'Em Up Engine
+ * Elfblade Road - Main Phaser 3 Initialization & Configuration
+ * 16-bit style Arcade Beat 'Em Up Engine
  */
 
 window.addEventListener('DOMContentLoaded', () => {

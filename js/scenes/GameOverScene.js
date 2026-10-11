@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Game Over / Continue Scene
+ * Elfblade Road - Game Over / Continue Scene
  * Retro arcade game over screen with score tally and restart countdown.
  */
 

@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Stage 1 Boss: Orc Warlord Gorgok
+ * Elfblade Road - Stage 1 Boss: Orc Warlord Gorgok
  * Dual-morningstar champion with leaping ground pounds, shockwaves,
  * and a 50% HP berserk rage phase with minion summoning.
  */

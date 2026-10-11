@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Procedural 16-Bit Pixel Art Asset Generator
+ * Elfblade Road - Procedural 16-Bit Pixel Art Asset Generator
  * Generates all spritesheets, tilesets, backgrounds, and VFX directly
  * onto HTML5 Canvases and registers them with Phaser 3 TextureManager.
  */
@@ -288,7 +288,7 @@ class AssetGenerator {
     ctx.restore();
   }
 
-  // Draw an authentic SNES pixel blade with glowing aura
+  // Draw an 16-bit style pixel blade with glowing aura
   drawPixelBlade(ctx, x, y, length, angle, glowing = false) {
     ctx.save();
     ctx.translate(x, y);

@@ -1,6 +1,4 @@
-# Untitled Dragon Brawler (16-Bit Beat 'Em Up)
-
-*Working title. A real name is coming.*
+# Elfblade Road (16-Bit Beat 'Em Up)
 
 A little side-scrolling brawler in the browser. You're an elf warrior with a sword, a shield, and a lightning spell, punching your way through goblins and orcs to an orc warlord boss. I'm Cricket ([@Cyb3rCricket](https://x.com/Cyb3rCricket)), and I made this because 90s arcade brawlers are joy in game form.
 

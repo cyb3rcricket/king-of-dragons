@@ -1,5 +1,5 @@
 /**
- * Untitled Dragon Brawler - Stage 1 Victory Scene
+ * Elfblade Road - Stage 1 Victory Scene
  * Features Stage Clear fanfare, bonus tally calculations,
  * hero ranking grade (S / A / B / C), and replay option.
  */
