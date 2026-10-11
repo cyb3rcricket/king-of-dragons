@@ -27,8 +27,8 @@ class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
 
 def main():
     socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), NoCacheHandler) as httpd:
-        url = f"http://localhost:{PORT}/"
+    with socketserver.TCPServer(("127.0.0.1", PORT), NoCacheHandler) as httpd:
+        url = f"http://127.0.0.1:{PORT}/"
         print("=" * 60)
         print("  THE KING OF DRAGONS (SNES 16-BIT CLASSIC ARCADE)")
         print(f"  Game Server active at: {url}")
